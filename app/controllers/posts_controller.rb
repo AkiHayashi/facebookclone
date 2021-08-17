@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   end
 
   def confirm
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
     render :new if @post.invalid?
   end
 
@@ -30,7 +30,7 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.build(post_params)
       if @post.save
         redirect_to posts_path, notice: "Post was successfully created." 
       else
