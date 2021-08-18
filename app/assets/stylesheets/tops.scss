@@ -1,6 +1,7 @@
 // Place all the styles related to the tops controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -53,4 +54,8 @@ footer {
   position: relative;
   padding-bottom: 60px;
   box-sizing: border-box;
+}
+
+.btn-dark {
+  font-weight: bold;
 }
