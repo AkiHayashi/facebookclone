@@ -1,0 +1,56 @@
+// Place all the styles related to the tops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo {
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: rgb(8, 157, 194);
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  padding-top: 60px;
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+footer p {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  width: 100%;
+}
+.footerFixed{
+  min-height: 100vh; 
+  position: relative;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
